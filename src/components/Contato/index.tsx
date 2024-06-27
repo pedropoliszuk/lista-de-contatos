@@ -1,25 +1,35 @@
-import { ContatoContainer, ContatoItem, ContatoLabel } from "./styles";
+import { ContatoContainer, ContatoItem, ContatoLabel } from './styles'
 
 interface ContatoProps {
-  id: number;
-  nome: string;
-  telefone: string;
-  email: string;
-  onEdit: (id: number) => void;
-  onDelete: (id: number) => void;
+  id: number
+  nome: string
+  telefone: string
+  email: string
+  onEdit: (id: number) => void
+  onDelete: (id: number) => void
 }
 
-const Contato: React.FC<ContatoProps> = ({id, nome, telefone, email, onEdit, onDelete}) => {
+const Contato: React.FC<ContatoProps> = ({
+  id,
+  nome,
+  telefone,
+  email,
+  onEdit,
+  onDelete
+}) => {
   return (
     <ContatoContainer>
       <ContatoItem>
-        <ContatoLabel>Nome:</ContatoLabel>{nome}
+        <ContatoLabel>Nome:</ContatoLabel>
+        {nome}
       </ContatoItem>
       <ContatoItem>
-        <ContatoLabel>Telefone:</ContatoLabel>{telefone}
+        <ContatoLabel>Telefone:</ContatoLabel>
+        {telefone}
       </ContatoItem>
       <ContatoItem>
-        <ContatoLabel>E-mail:</ContatoLabel>{email}
+        <ContatoLabel>E-mail:</ContatoLabel>
+        {email}
       </ContatoItem>
     </ContatoContainer>
   )

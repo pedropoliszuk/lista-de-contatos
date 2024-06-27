@@ -1,5 +1,5 @@
-import { configureStore } from "@reduxjs/toolkit";
-import contatosReducer from "./contatosSlice";
+import { configureStore } from '@reduxjs/toolkit'
+import contatosReducer from './contatosSlice'
 const store = configureStore({
   reducer: {
     contatos: contatosReducer

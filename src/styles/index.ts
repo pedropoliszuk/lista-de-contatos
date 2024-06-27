@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from 'styled-components'
 
 const EstiloGlobal = createGlobalStyle`
   * {
@@ -18,10 +18,6 @@ export const AppContainer = styled.div`
 `
 
 export default EstiloGlobal
-
-
-
-
 
 // body, html {
 //   height: 100%;
